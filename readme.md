@@ -4,7 +4,7 @@ This repository contains the source code for the paper submitted to CIKM 2024 ti
 
 ## Note:
 
-Resources are still being updated. Stay tuned for further updates!
+Resources are still being updated. Stay tuned!
 
 ## Data:
 
@@ -15,4 +15,5 @@ Due to Twitter's privacy policy, we are currently processing the dataset to ensu
 To train the framework once data is uploaded , run the following script:
 
 ```bash
-python train.py
+python train.py --dataset Twitter15
+python train.py --dataset Twitter16
