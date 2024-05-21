@@ -8,11 +8,11 @@ Resources are still being updated. Stay tuned!
 
 ## Data:
 
-Due to Twitter's privacy policy, we are currently processing the dataset to ensure that sensitive information of users is not disclosed. Once the processing is complete, we will upload the data, including explanations obtained from LLMs.
+Due to Twitter's privacy policy, we are currently processing the dataset to ensure that sensitive information of users is not disclosed. Once the processing is complete, we will upload the processed datasets, including explanations obtained from LLMs.
 
 ## Train the Framework:
 
-To train the framework once data is uploaded , run the following script:
+To train the framework once dataset is uploaded , run the following script:
 
 ```bash
 python train.py --dataset Twitter15
