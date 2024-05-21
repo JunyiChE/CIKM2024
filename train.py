@@ -67,7 +67,7 @@ if __name__ == "__main__":
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
-    num_epochs = 20
+    num_epochs = 100
     param_names = {param: name for name, param in model.named_parameters()}
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = AdamW(model.parameters(), lr=1e-5)
@@ -81,9 +81,6 @@ if __name__ == "__main__":
     best_rec = 0
     best_f1_0 = 0
     best_f1_1 = 0
-    # Initialize dictionaries to store incorrect counts
-    val_incorrect_counts = {}
-    test_incorrect_counts = {}
     for epoch in range(num_epochs):
         # train_loss = train(model, train_loader,optimizer,uid_to_index,pyg_data)
         model.train()
