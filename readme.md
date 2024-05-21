@@ -12,7 +12,7 @@ Due to Twitter's privacy policy, we are currently processing the dataset to ensu
 
 ## Train the Framework:
 
-To train the framework once data is uploaded , run the follow script:
+To train the framework once data is uploaded , run the following script:
 
 ```bash
 python train.py
